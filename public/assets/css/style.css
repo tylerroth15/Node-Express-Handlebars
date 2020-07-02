@@ -1,11 +1,12 @@
 .form-group {
   margin-bottom: 5px;
+  color: #ffffff !important;
 }
 body{
   width: 99%;
   height: 99%;
   background-color: #101010 !important;
-  color: #ffffff !important;
+  color: #e7133e !important;
 }
 
 h1{
@@ -35,14 +36,17 @@ label{
 
 .addburger{
   color: #ffffff;
-  background-color: #46ef7f;
+  background-color: #46ef7f !important;
   border-radius: 8px;
-  border: none;
+  border: none !important;
   padding: 15px 15px;
   text-align: center;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: bold !important;
   margin: 4px 2px;
   cursor: pointer;
 }
 
+.burger-color{
+  color: #fc6 !important;
+}
