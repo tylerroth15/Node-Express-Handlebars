@@ -9,6 +9,17 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
+if(process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'tyduzbv3ggpf15sx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: 	'gpqzv6uj2iuzdywa',
+    password: 'tk30733murpar4ow',
+    database: 'ociyw0gwo4k29myu'
+  });
+};
+
 // Make connection.
 connection.connect(function(err) {
   if (err) {
